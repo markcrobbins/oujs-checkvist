@@ -1,0 +1,83 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+    Version="10.0"
+    VendorName="SlickEdit"
+    TemplateName="web"
+    Customized="1"
+    WorkingDir=".">
+    <Config
+        Name="Release"
+        OutputFile=""
+        CompilerConfigName="">
+        <Menu>
+            <Target
+                Name="Compile"
+                MenuCaption="&amp;Compile"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveCurrent"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Build"
+                MenuCaption="&amp;Build"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Rebuild"
+                MenuCaption="&amp;Rebuild"
+                CaptureOutputWith="ProcessBuffer"
+                SaveOption="SaveWorkspaceFiles"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Debug"
+                MenuCaption="&amp;Debug"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec/>
+            </Target>
+            <Target
+                Name="Execute"
+                MenuCaption="E&amp;xecute"
+                SaveOption="SaveNone"
+                RunFromDir="%rw">
+                <Exec CmdLine='"oujs-checkvist.exe"'/>
+            </Target>
+        </Menu>
+    </Config>
+    <Files>
+        <Folder
+            Name="png "
+            Filters="*.png"
+            GUID="{26B79539-719D-427F-2BC1-0BB362D13EA3}"/>
+        <Folder
+            Name="js "
+            Filters="*.js"
+            GUID="{00249C70-D9D0-4C30-E217-6A9D2A56D2A8}">
+            <F N="oujs-checkvist.user.js"/>
+            <F N="required.js"/>
+        </Folder>
+        <Folder
+            Name="css "
+            Filters="*.css"
+            GUID="{C8068B6D-EF9D-4B5A-F774-E236BED9A596}">
+            <F N="style.css"/>
+        </Folder>
+        <Folder
+            Name="html "
+            Filters="*.html"
+            GUID="{40F6FE80-B241-41FD-89A5-3F439D26D08A}"/>
+        <Folder
+            Name="Other Files "
+            Filters=""
+            GUID="{82CD6F71-2C56-419B-6F52-2022C16C49BB}">
+            <F N="oujs-checkvist.vpj"/>
+            <F N="oujs-checkvist.vpw"/>
+        </Folder>
+    </Files>
+</Project>
